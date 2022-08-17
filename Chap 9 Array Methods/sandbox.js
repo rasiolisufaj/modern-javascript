@@ -1,10 +1,7 @@
-const scores = [10, 30, 15, 25, 50, 40, 5];
+const scores = [20, 10, 30, 25, 15, 40, 80, 5];
 
-// const filteredScores = scores.filter((score) => {
-//   return score > 20;
-// });
-
-// console.log(filteredScores);
+const filteredScores = scores.filter((score) => score > 20);
+console.log(filteredScores);
 
 const users = [
   { name: "shaun", premium: true },
@@ -12,3 +9,7 @@ const users = [
   { name: "mario", premium: false },
   { name: "chun-li", premium: true },
 ];
+
+const premiumUsers = users.filter((user) => user.premium);
+
+console.log(premiumUsers);
