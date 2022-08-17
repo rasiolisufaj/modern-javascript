@@ -1,0 +1,30 @@
+Every event has 3 parts:
+  1. Target
+  2. Event type
+  3. The handler
+
+AFTER DEFINING 3 PARTS OF THE EVENT, WE REGISTER IT THROUGH
+addEventListener.
+
+1. The target is the element where the event happened
+2. The event type can be ex(click, dblclick, keyUp etc.)
+3. The handler is the function which will execute when the event happens.
+
+EX. Turn the button red when it is clicked
+    1. Target -> button
+    2. Event type -> "click", .onClick
+    3. Handler -> (e) => {
+      e.target.style.backgroundColor = 'red';
+    };
+
+    btnElement.addEventListener('click', (e) => {
+        e.target.style.backgroundColor = 'red';
+    });
+
+EX. When the user presses space, body color changes to green
+    1. Target -> window
+    2. Event type -> 'keyup'
+    3. Handler -> (e) => {
+      bodyElement.style.backgroundColor = 'red';
+    };
+

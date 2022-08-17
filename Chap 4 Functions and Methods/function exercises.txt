@@ -1,0 +1,52 @@
+1. Write a JavaScript function to print the “Hello World” message
+Function `displayMessage()` prints “Hello World” string using console.log() function.
+
+2. Write a function that returns the square of a number
+Function `findSquare()` returns the square of the input number which is passed as an argument in the function call.
+
+3. Write a function to convert Celsius to Fahrenheit
+Function `calFahrenheit()` returns the converted Celsius value to Fahrenheit value based on the formula `(Celsius × 9/5) + 32 = Fahrenheit`
+
+4. Write a function to find the area of a given Rectangle
+Function `rectangleArea()` returns the rectangle area provided the width and height as the argument.
+
+5. Write a function to find the area and perimeter of a Circle
+Function `circleValues()` returns the perimeter and area of the circle provided the radius as an argument for the function call.
+
+6. Write a function to reverse a number
+Function `reverseNum()` returns the reversed number for the given argument number value. 
+
+7. Count number of Vowels in String
+Function `countVowel()` returns the number of vowels in input string. Learn more about JavaScript String methods from javatpoint.com/javascript-string.
+
+8. Flatten array of arrays using JavaScript reduce
+Function `flattenArr()` flattens a 2D array by combining each sub array into 1D array by using JavaScript reduce.
+
+9. Write a function to check if an input string is a palindrome
+Function `checkPalindrome()` return a boolean value based on whether the input string is palindrome or not.
+
+10. Write a function to calculate simple interest based on the principle amount
+Function `simpleInt()` returns a final amount based on the simple interest formula provided principal amount, rate of interest per year, and time on a yearly basis.
+
+11. Write a function to calculate compound interest based on the principle amount
+Function `compoundInt()` returns a final amount based on the compound interest formula provided principal amount, rate of interest per year, time on a yearly basis, and n as the number of times that interest is compounded per unit time.
+
+12. Write a function to generate a random number
+Function `genRandom()` return a generated random integer number between the provided start and end range.
+
+13. Write a function to find Factorial of a number
+Function `getFactorial()` return the factorial of a number using the formula `n*(n-1)*(n-2)*…` .
+
+14. Write a function to add unlimited numbers
+Function `addNumber()` return the sum of all the number passed as arguments of the function.
+
+15. Write a function to combine unlimited arrays
+Function `addArrays()` return the concatenated array by combining all the arrays passed as an argument of the function.
+
+16. Write a function to find the count of a letter in a string
+Function `letterCount()` return the count of letter in a given string.
+
+17. Write a function to check if a number is Prime
+Function `checkPrime()` return Boolean value based on whether the number is Prime or not.
+
+https://contactmentor.com/js-function-exercises-solution/
