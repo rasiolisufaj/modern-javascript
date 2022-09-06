@@ -33,9 +33,26 @@ const getTodos = (resource) => {
   });
 };
 
-getTodos("todos.json")
+// getTodos("todos.json")
+//   .then((data) => {
+//     console.log("Promise resolved: ", data);
+//   })
+//   .catch((error) => {
+//     console.log("Promise rejected: ", error);
+//   });
+
+// CHAINING PROMISES
+getTodos("todos/luigi.json")
   .then((data) => {
-    console.log("Promise resolved: ", data);
+    console.log("Promise 1 resolved:", data);
+    return getTodos("todos/mario.json");
+  })
+  .then((data) => {
+    console.log("Promise 2 resolved:", data);
+    return getTodos("todos/shaun.json");
+  })
+  .then((data) => {
+    console.log("Promise 3 resolved:", data);
   })
   .catch((error) => {
     console.log("Promise rejected: ", error);
