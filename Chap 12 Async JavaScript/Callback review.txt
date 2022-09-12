@@ -1,0 +1,64 @@
+Async != Sync
+
+Sync => We may execute only one instruction(a line of code) at a time
+
+  ex: console.log("HI");
+
+Async => We may execute 2 or more instruction at a time
+
+
+  EX: Displaying the time at the TypingUP
+
+      setInterval(()=>{
+        console.log(time);
+      }, 1000);
+
+      1. Krijohet 1 thread i ri (njesoj si te deklarosh 1 variabel)
+          Kujdes: ruajme threadin per ta "clear" me vone 
+      2. Krijohet 1 cikel i pafundem 
+      3. Brenda ciklit ekzekutohet callback-u te cilin e kemi dhen si argument
+
+
+Callback is a function which is taken as argument for another function
+  Callback perdoret kur nje pjese e funksionit qe ne ndertojme eshte e PAPERCAKTUAR
+
+
+  ex: function showAge(){
+        console.log(10);
+      }
+      
+      function showAge(age){
+        console.log(age);
+      }
+
+ex:  function setInterval(){
+        while(true){
+          console.log(10);
+        }
+    }
+
+    function setInterval(time){
+        while(true){
+          delay(time);
+          console.log(10);
+        }
+    }
+
+    function setInterval(doSomthing,time){
+        while(true){
+          delay(time);
+          doSomthing();
+        }
+    }
+
+    showAge(5);
+
+    function displayClock(){
+      log(new Date());
+    }
+    setInterval(displayClock, 1000);
+    
+
+    setInterval(()=>{
+      log(new Date());
+    }, 1000)
