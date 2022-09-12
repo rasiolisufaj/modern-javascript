@@ -14,3 +14,8 @@ console.log(userName, userAge, userEducation);
 localStorage.setItem("name", "John");
 userName = localStorage.getItem("name");
 console.log(userName);
+
+// Remove item
+// localStorage.removeItem("age");
+// userAge = localStorage.getItem("age");
+// // console.log(userAge); => NULL
