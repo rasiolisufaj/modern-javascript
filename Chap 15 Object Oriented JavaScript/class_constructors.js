@@ -10,7 +10,7 @@ ex. class User {
   }
 }
 
-const userOne = new User(); => this calls the constructior function inside the User class and sets all the properties on this new object
+const userOne = new User(); => this calls the constructor function inside the User class and sets all the properties on this new object
 
 // the 'new' keyword
   1- it creates a new empty object {}
@@ -22,15 +22,23 @@ const userOne = new User(); => this calls the constructior function inside the U
 // ↓↓ We are creating unique objects using the constructor and passing in values → const userOne = new User("rasiol", "rasiol@gmail.com");
 
 class User {
-  constructor(username, email) {
-    // set up properties
+  constructor(username, email, age) {
     this.username = username;
     this.email = email;
+    this.age = age;
+  }
+  login() {
+    console.log(`${this.username} just logged in`);
+    return this;
+  }
+  logout() {
+    console.log(`${this.username} just logged out`);
+    return this;
   }
 }
 
-const userOne = new User("rasiol", "rasiol@gmail.com"); //We are creating an instance of the User class
-const userTwo = new User("mario", "mario@gmail.com");
-console.log(userOne, userTwo);
-
-// The instance refers to the individual object that we actually create using the class
+const userOne = new User("Jack01", "jack@gmail.com", 22);
+const userTwo = new User("jack11", "jack11@gmail.com", 23);
+const userThree = new User("jack22", "jack22@gmail.com", 24);
+console.log(userOne, userTwo, userThree);
+userTwo.login().logout();

@@ -42,23 +42,17 @@ class User {
     console.log(`${this.username} just logged in`);
     return this;
   }
-  logout() {
+  login() {
     console.log(`${this.username} just logged out`);
     return this;
   }
   incrementScore() {
     this.score += 1;
-    console.log(`${this.username} has a score of ${this.score}`);
+    console.log(`${this.username} has ${this.score} scores`);
     return this;
   }
 }
 
-const userOne = new User("rasiol", "rasiol@gmail.com");
-const userTwo = new User("andrew", "andrew@gmail.com");
+const userOne = new User("Rasiol", "rasiol@email.com");
+userOne.incrementScore().incrementScore().incrementScore();
 console.log(userOne);
-// userOne.login();
-// userTwo.logout();
-// userOne.incrementScore();
-
-// CHAINING METHODS
-userOne.login().incrementScore().incrementScore().logout();

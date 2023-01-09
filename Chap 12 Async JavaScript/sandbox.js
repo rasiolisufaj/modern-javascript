@@ -18,7 +18,7 @@ console.log(6);
 console.log(6);
 setTimeout(() => {
   console.log("Before callback function fired");
-}, 1500);
+}, 1000);
 console.log(6);
 console.log(6);
 console.log(6);
